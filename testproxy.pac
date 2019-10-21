@@ -8,7 +8,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.slack-imgs.com") ||
         shExpMatch(host, "*.slack-edge.com") ||
         shExpMatch(host, "*.slack-core.com") ||
-        shExpMatch(host, "*.slack-redir.net")) ||
+        shExpMatch(host, "*.slack-redir.net") ||
     // dropbox domains
         shExpMatch(host, "dropbox.com") ||
         shExpMatch(host, "*.dropbox.com") ||
