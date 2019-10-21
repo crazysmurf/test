@@ -17,6 +17,7 @@ function FindProxyForURL(url, host) {
     // dropbox domains
     if (shExpMatch(host, "dropbox.com") ||
         shExpMatch(host, "*.dropbox.com") ||
+        shExpMatch(host, "*.dropboxstatic.com") ||
         shExpMatch(host, "*.dropboxusercontent.com") ||
         shExpMatch(host, "db.tt") ||
         shExpMatch(host, "*.dropboxapi.com") ||
