@@ -8,14 +8,9 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.slack-imgs.com") ||
         shExpMatch(host, "*.slack-edge.com") ||
         shExpMatch(host, "*.slack-core.com") ||
-        shExpMatch(host, "*.slack-redir.net")) {
-        // Use SOCK proxy, or fall back to a DIRECT traffic.
-        // ssh -D 8888 [user]@[server]
-        return "SOCKS 127.0.0.1:8888; DIRECT";
-    }
-
+        shExpMatch(host, "*.slack-redir.net")) ||
     // dropbox domains
-    if (shExpMatch(host, "dropbox.com") ||
+        shExpMatch(host, "dropbox.com") ||
         shExpMatch(host, "*.dropbox.com") ||
         shExpMatch(host, "*.dropboxusercontent.com") ||
         shExpMatch(host, "db.tt") ||
